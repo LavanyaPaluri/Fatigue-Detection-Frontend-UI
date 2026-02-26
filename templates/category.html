@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Category Selection</title>
+
+    <!-- IMPORTANT -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='category.css') }}">
+</head>
+<body>
+
+<div class="container">
+
+    <!-- Logout -->
+    <a href="{{ url_for('login') }}" class="logout-btn">
+        ⏻ Logout
+    </a>
+
+    <!-- Header -->
+    <div class="header">
+        <h1>Select Your Category</h1>
+        <p>Proactive Human Fatigue Detection</p>
+    </div>
+
+    <!-- Category Grid -->
+    <div class="category-grid">
+
+        <!-- Driver -->
+        <div class="category-card">
+            <img src="{{ url_for('static', filename='assets/driver.jpg') }}">
+            <div class="card-content">
+                <h3>🚗 Driver</h3>
+                <button>Start Recording</button>
+            </div>
+        </div>
+
+        <!-- Industrial Worker -->
+        <div class="category-card">
+            <img src="{{ url_for('static', filename='assets/industrial.jpg') }}">
+            <div class="card-content">
+                <h3>⚙ Industrial Worker</h3>
+                <button>Start Recording</button>
+            </div>
+        </div>
+
+        <!-- Healthcare -->
+        <div class="category-card">
+            <img src="{{ url_for('static', filename='assets/healthcare.jpg') }}">
+            <div class="card-content">
+                <h3>➕ Healthcare Staff</h3>
+                <button>Start Recording</button>
+            </div>
+        </div>
+
+        <!-- Desk Worker -->
+        <div class="category-card">
+            <img src="{{ url_for('static', filename='assets/desk.jpg') }}">
+            <div class="card-content">
+                <h3>💻 Desk Worker / Student</h3>
+                <button>Start Recording</button>
+            </div>
+        </div>
+
+        <!-- Research -->
+        <div class="category-card">
+            <img src="{{ url_for('static', filename='assets/research.jpg') }}">
+            <div class="card-content">
+                <h3>🔬 Research / Demo Mode</h3>
+                <button>Start Recording</button>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+</body>
+</html>

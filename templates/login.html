@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Login</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+<div class="main-container">
+
+    <!-- LEFT TEXT -->
+    <div class="left-text">
+        <h1>PROACTIVE HUMAN</h1>
+        <h2>FATIGUE</h2>
+        <h3>DETECTION SYSTEM</h3>
+    </div>
+
+    <!-- LOGIN CARD -->
+    <div class="login-card">
+        <h4>Login</h4>
+
+        <input type="email" placeholder="Enter your email">
+        <input type="password" placeholder="Enter your password">
+
+        <div class="options">
+            <label>
+                <input type="checkbox"> Remember me
+            </label>
+            <a href="#">Forgot password?</a>
+        </div>
+
+        <button class="login-btn" onclick="goToCategory()">Log In</button>
+
+
+        <p class="register-text">
+            Don't have an account? <a href="/register">Register</a>
+        </p>
+    </div>
+
+</div>
+
+</body>
+</html>
+<script>
+    function goToCategory() {
+        window.location.href = "{{ url_for('category') }}";
+    }
+</script>
+
