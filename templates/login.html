@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Login</title>
-    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <link rel="stylesheet" href="../static/style.css">
 </head>
 <body>
 
@@ -34,7 +34,7 @@
 
 
         <p class="register-text">
-            Don't have an account? <a href="/register">Register</a>
+            Don't have an account? <a href="register.html">Register</a>
         </p>
     </div>
 
@@ -44,7 +44,8 @@
 </html>
 <script>
     function goToCategory() {
-        window.location.href = "{{ url_for('category') }}";
+        window.location.href = "category.html";
     }
 </script>
+
 
